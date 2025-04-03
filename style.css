@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #0d0d0d;
+  background: #0a0a0a;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -22,16 +22,14 @@ header {
   z-index: 1000;
 }
 
-.logo {
-  font-size: 1.4rem;
-  color: #f00;
-  font-weight: bold;
+.logo img {
+  height: 40px;
 }
 
 nav ul {
   display: flex;
-  gap: 20px;
   list-style: none;
+  gap: 20px;
 }
 
 nav a {
@@ -42,53 +40,51 @@ nav a {
 }
 
 nav a:hover {
-  color: #f00;
+  color: #e50914;
 }
 
 .hero {
   height: 100vh;
-  background: url('https://source.unsplash.com/1600x900/?motel,bedroom') center/cover no-repeat;
+  background: url('https://source.unsplash.com/1600x900/?hotel,room') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding-top: 80px;
 }
 
 .hero-content {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   padding: 40px;
   border-radius: 10px;
-  text-align: center;
 }
 
 .btn {
-  display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background: transparent;
-  border: 2px solid #f00;
-  color: #f00;
-  text-decoration: none;
-  font-weight: bold;
+  border: 2px solid #e50914;
+  color: #e50914;
   border-radius: 25px;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
-  background: #f00;
+  background: #e50914;
   color: #fff;
 }
 
 .section {
-  padding: 100px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .section-title {
   text-align: center;
   margin-bottom: 40px;
-  color: #f00;
+  font-size: 2rem;
+  color: #e50914;
 }
 
 .cards {
@@ -109,47 +105,34 @@ nav a:hover {
 
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
 }
 
 .card img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.promo {
-  background: #111;
-  color: #f88;
-  text-align: center;
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #e50914;
+}
+
+.card small {
+  display: block;
+  font-size: 0.8rem;
+  color: #ccc;
+  padding-bottom: 15px;
 }
 
 footer {
   background: #000;
-  padding: 30px;
   text-align: center;
-  color: #888;
-}
-
-.whatsapp-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 55px;
-}
-
-.whatsapp-btn img {
-  width: 100%;
-}
-
-/* Efeitos de entrada */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  padding: 30px;
+  color: #999;
 }
