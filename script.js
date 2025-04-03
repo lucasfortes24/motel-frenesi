@@ -1,3 +1,2 @@
-// Aqui você pode adicionar scripts no futuro
-console.log("Site Motel Frenesi carregado com sucesso!");
-
+// Se quiser adicionar futuramente interatividade (ex: toggle, modal), pode usar aqui
+console.log("Motel Frenesi carregado");
